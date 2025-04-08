@@ -131,7 +131,7 @@ def main() -> None:
     album_data = []
     tracklist_data = []
 
-    for code in barcodes_list[0:10]:
+    for code in barcodes_list:
         time.sleep(1)
         print(f"Getting data for barcode: {code}...")
         album, tracklist  = get_music_data(code, token)
